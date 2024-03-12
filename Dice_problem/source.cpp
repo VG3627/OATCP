@@ -20,7 +20,7 @@ int f(int n)
 {
     if(n < 0)
     {
-        return -1 ;
+        return 0 ;
     }
     if(n == 0)
     {
@@ -47,7 +47,7 @@ void solve()
     memset(dp,-1,sizeof(dp)) ;
     if(n == 0)
     {
-        cout<<-1<<"\n" ; return ; // -1 indicates we can not form the sum using any number of dice rolls. 
+        cout<<0<<"\n" ; return ; 
     }
     
     int ans = f(n) % M ;
