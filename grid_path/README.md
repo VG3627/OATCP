@@ -4,6 +4,8 @@ If the movement is valid (within the grid boundaries and not blocked by '*'), it
 
 A 2D dp array is used to store results of the functions calls to to use it again for same recursive calls.
 
+Modulo by 1e9 + 7 is done to avoid integer overflow.
+
 Time complexity of single test case : O(n^2)
 
 Space complexity of single test case : O(n^2)
